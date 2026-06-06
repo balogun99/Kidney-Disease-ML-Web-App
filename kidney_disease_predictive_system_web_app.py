@@ -3,10 +3,10 @@ import pickle
 import streamlit as st
 
 # load the saved model
-# loaded_model = pickle.load(open('/Users/macbookpro/Desktop/ML & DL & GENAI Projects/Machine Learning/Kidney Disease Predictive System/kidney_model_data.sav', 'rb'))
+loaded_model = pickle.load(open('kidney_model_data.sav', 'rb'))
 
-with open('/Users/macbookpro/Desktop/ML & DL & GENAI Projects/Machine Learning/Kidney Disease Predictive System/kidney_model_data.sav', 'rb') as file:
-    loaded_model = pickle.load(file)
+# with open('/Users/macbookpro/Desktop/ML & DL & GENAI Projects/Machine Learning/Kidney Disease Predictive System/kidney_model_data.sav', 'rb') as file:
+#     loaded_model = pickle.load(file)
 
 # create a function for prediction
 def kidney_disease_prediction(input_data):
